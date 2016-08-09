@@ -10,6 +10,7 @@ import android.widget.TextView;
  * Created by everything on 4/6/2016.
  */
 public class ActivityB extends Activity {
+
     private String mActivityName;
     private TextView mStatusView;
     private TextView mStatusAllView;
@@ -24,8 +25,8 @@ public class ActivityB extends Activity {
         mStatusAllView = (TextView)findViewById(R.id.status_view_all_b);
         mStatusTracker.setStatus(mActivityName, getString(R.string.on_create));
         Utils.printStatus(mStatusView, mStatusAllView);
-
     }
+
     @Override
     protected void onStart() {
         super.onStart();
